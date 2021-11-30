@@ -11,5 +11,6 @@ it('Should render Picker component', () => {
 	expect(selectHead).toBeInTheDocument();
 	expect(selectMiddle).toBeInTheDocument();
 	expect(selectPants).toBeInTheDocument();
-	expect(container).toBeInTheDocument();
+	expect(input).toBeInTheDocument();
+	expect(container).toMatchSnapshot();
 });
