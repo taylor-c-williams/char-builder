@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-
-export default class Display extends Component {
-	render() {
-		return <div></div>;
-	}
+export default function Display({ catchphrases }) {
+	return (
+		<div>
+			{catchphrases.map((catchphrase) => (
+				<p>{catchphrase}</p>
+			))}
+		</div>
+	);
 }

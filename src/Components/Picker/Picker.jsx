@@ -8,7 +8,7 @@ export default function Picker({
 	pants,
 	onPantsChange,
 	newCatchPhrase,
-	setCatchPhrase,
+	setNewCatchphrase,
 	handleClick,
 }) {
 	// Set state in both app and component ??
@@ -56,8 +56,9 @@ export default function Picker({
 			<label>
 				Catchphrase
 				<input
-					defaultValue={newCatchPhrase}
-					onChange={(e) => setCatchPhrase(e.target.value)}
+					type="text"
+					value={newCatchPhrase}
+					onChange={(e) => setNewCatchphrase(e.target.value)}
 				/>
 				<button onClick={handleClick}>Add Catchphrase!</button>
 			</label>

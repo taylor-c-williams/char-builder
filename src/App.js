@@ -27,14 +27,15 @@ function App() {
 				onMiddleChange={setMiddle}
 				pants={pants}
 				onPantsChange={setPants}
-				newCatchPhrase={newCatchphrase}
-				setCatchphrase={setNewCatchphrase}
+				newCatchphrase={newCatchphrase}
+				setNewCatchphrase={setNewCatchphrase}
 				handleClick={handleClick}
 			/>
 
 			<Display catchphrases={catchphrases} />
 
 			<Character head={head} middle={middle} pants={pants} />
+			{console.log(catchphrases)}
 		</section>
 	);
 }
