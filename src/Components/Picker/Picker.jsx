@@ -2,15 +2,20 @@ import React from 'react';
 
 export default function Picker({
 	head,
-	onMiddleChange,
 	onHeadChange,
 	middle,
+	onMiddleChange,
+	pants,
+	onPantsChange,
 	newCatchPhrase,
 	setCatchPhrase,
 	handleClick,
 }) {
-	const [head, setHead] = useState('dog');
-	const [middle, setMiddle] = useState('fancy');
+	// Set state in both app and component ??
+	// const [head, setHead] = useState('dog');
+	// const [middle, setMiddle] = useState('fancy');
+	// const [pants, setPants] = useState('leg');
+
 	const headPics = ['bird', 'duck', 'dog'];
 	const middlePics = ['blue', 'fancy', 'pink', 'red'];
 	const pantsPics = ['blue', 'dog', 'leg', 'white'];
@@ -20,7 +25,7 @@ export default function Picker({
 			{/* Head Dropdown */}
 			<label>
 				Head
-				<select value={head} onchange={(e) => onHeadChange(e.target.value)}>
+				<select value={head} onChange={(e) => onHeadChange(e.target.value)}>
 					{headPics.map((pic) => (
 						<option key={pic}>{pic}</option>
 					))}
@@ -51,7 +56,7 @@ export default function Picker({
 			<label>
 				Catchphrase
 				<input
-					value={newCatchPhrase}
+					defaultValue={newCatchPhrase}
 					onChange={(e) => setCatchPhrase(e.target.value)}
 				/>
 				<button onClick={handleClick}>Add Catchphrase!</button>

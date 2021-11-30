@@ -5,6 +5,7 @@ import Display from './Components/Display/Display';
 import Picker from './Components/Picker/Picker';
 
 function App() {
+	// Ask about set state in both app and component (Picker)
 	const [head, setHead] = useState('dog');
 	const [middle, setMiddle] = useState('fancy');
 	const [pants, setPants] = useState('leg');
@@ -16,7 +17,7 @@ function App() {
 	};
 
 	return (
-		<container className="App">
+		<section className="App">
 			<h1>Char Designer!</h1>
 
 			<Picker
@@ -33,8 +34,8 @@ function App() {
 
 			<Display catchphrases={catchphrases} />
 
-			<Character head={head} middle={middle} />
-		</container>
+			<Character head={head} middle={middle} pants={pants} />
+		</section>
 	);
 }
 
