@@ -56,6 +56,7 @@ export default function Picker({
 			<label>
 				Catchphrase
 				<input
+					id="catchphrase-button"
 					type="text"
 					value={newCatchPhrase}
 					onChange={(e) => setNewCatchphrase(e.target.value)}
