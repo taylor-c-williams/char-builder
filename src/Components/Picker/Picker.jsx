@@ -11,11 +11,6 @@ export default function Picker({
 	setNewCatchphrase,
 	handleClick,
 }) {
-	// Set state in both app and component ??
-	// const [head, setHead] = useState('dog');
-	// const [middle, setMiddle] = useState('fancy');
-	// const [pants, setPants] = useState('leg');
-
 	const headPics = ['bird', 'duck', 'dog'];
 	const middlePics = ['blue', 'fancy', 'pink', 'red'];
 	const pantsPics = ['blue', 'dog', 'leg', 'white'];

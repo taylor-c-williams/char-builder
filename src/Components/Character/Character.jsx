@@ -1,7 +1,7 @@
 export default function Character({ head, middle, pants }) {
 	return (
 		<section className="character-display">
-			<h1> Character Picker-Outer!</h1>
+			<h1> ♥︎ Character Picker-Outer! ♥︎</h1>
 			{/* Head Display */}
 			<article
 				aria-label="head"
