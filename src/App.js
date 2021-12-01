@@ -13,8 +13,9 @@ function App() {
 	const [catchphrases, setCatchphrases] = useState([]);
 
 	const handleClick = () => {
+		let input = document.getElementById('catchphrase-button');
 		setCatchphrases((prevState) => [...prevState, newCatchphrase]);
-		document.getElementById('catchphrase-button').value = '';
+		input.value = '';
 	};
 
 	return (

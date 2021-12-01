@@ -3,7 +3,7 @@ export default function Display({ catchphrases }) {
 		<div>
 			Catchphrases:
 			{catchphrases.map((catchphrase) => (
-				<p>"{catchphrase}"</p>
+				<p key={catchphrase}>"{catchphrase}"</p>
 			))}
 		</div>
 	);
