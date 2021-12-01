@@ -8,7 +8,7 @@ export default function Character({ head, middle, pants }) {
 					backgroundImage: `url(./${head}-head.png)`,
 					height: 150,
 					width: 150,
-					backgroundSize: 'cover',
+					backgroundSize: 100,
 					backgroundRepeat: 'no-repeat',
 				}}
 			></article>
@@ -20,7 +20,7 @@ export default function Character({ head, middle, pants }) {
 					backgroundImage: `url(./${middle}-middle.png)`,
 					height: 150,
 					width: 150,
-					backgroundSize: 'cover',
+					backgroundSize: 100,
 					backgroundRepeat: 'no-repeat',
 				}}
 			></article>
@@ -30,9 +30,9 @@ export default function Character({ head, middle, pants }) {
 				aria-label="pants"
 				style={{
 					backgroundImage: `url(./${pants}-pants.png)`,
-					height: 350,
+					height: 250,
 					width: 150,
-					backgroundSize: 'cover',
+					backgroundSize: 100,
 					backgroundRepeat: 'no-repeat',
 				}}
 			></article>

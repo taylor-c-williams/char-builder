@@ -21,48 +21,53 @@ export default function Picker({
 	const pantsPics = ['blue', 'dog', 'leg', 'white'];
 
 	return (
-		<section className="Picker">
+		<section className="picker">
 			{/* Head Dropdown */}
-			<label>
-				Head
-				<select value={head} onChange={(e) => onHeadChange(e.target.value)}>
-					{headPics.map((pic) => (
-						<option key={pic}>{pic}</option>
-					))}
-				</select>
-			</label>
+			<form>
+				<label>
+					Head:
+					<select value={head} onChange={(e) => onHeadChange(e.target.value)}>
+						{headPics.map((pic) => (
+							<option key={pic}>{pic}</option>
+						))}
+					</select>
+				</label>
 
-			{/* Middle Dropdown */}
-			<label>
-				Middle
-				<select value={middle} onChange={(e) => onMiddleChange(e.target.value)}>
-					{middlePics.map((pic) => (
-						<option key={pic}>{pic}</option>
-					))}
-				</select>
-			</label>
+				{/* Middle Dropdown */}
+				<label>
+					Body:
+					<select
+						value={middle}
+						onChange={(e) => onMiddleChange(e.target.value)}
+					>
+						{middlePics.map((pic) => (
+							<option key={pic}>{pic}</option>
+						))}
+					</select>
+				</label>
 
-			{/* Pants Dropdown */}
-			<label>
-				Pants
-				<select value={pants} onChange={(e) => onPantsChange(e.target.value)}>
-					{pantsPics.map((pic) => (
-						<option key={pic}>{pic}</option>
-					))}
-				</select>
-			</label>
+				{/* Pants Dropdown */}
+				<label>
+					Legs:
+					<select value={pants} onChange={(e) => onPantsChange(e.target.value)}>
+						{pantsPics.map((pic) => (
+							<option key={pic}>{pic}</option>
+						))}
+					</select>
+				</label>
 
-			{/* Catchphrase Input */}
-			<label>
-				Catchphrase
-				<input
-					id="catchphrase-button"
-					type="text"
-					value={newCatchPhrase}
-					onChange={(e) => setNewCatchphrase(e.target.value)}
-				/>
-				<button onClick={handleClick}>Add Catchphrase!</button>
-			</label>
+				{/* Catchphrase Input */}
+				<label>
+					Catchphrase:
+					<textarea
+						id="catchphrase-button"
+						type="text"
+						value={newCatchPhrase}
+						onChange={(e) => setNewCatchphrase(e.target.value)}
+					/>
+				</label>
+			</form>
+			<button onClick={handleClick}>Add!</button>
 		</section>
 	);
 }

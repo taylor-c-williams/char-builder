@@ -3,10 +3,10 @@ import Picker from './Picker';
 
 it('Should render Picker component', () => {
 	const { container } = render(<Picker />);
-	const selectHead = screen.getByLabelText(/Head/);
-	const selectMiddle = screen.getByLabelText(/Middle/);
-	const selectPants = screen.getByLabelText(/Pants/);
-	const input = screen.getByLabelText(/Catchphrase/);
+	const selectHead = screen.getByLabelText(/Head:/);
+	const selectMiddle = screen.getByLabelText(/Body:/);
+	const selectPants = screen.getByLabelText(/Legs:/);
+	const input = screen.getByLabelText(/Catchphrase:/);
 
 	expect(selectHead).toBeInTheDocument();
 	expect(selectMiddle).toBeInTheDocument();

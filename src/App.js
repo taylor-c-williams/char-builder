@@ -20,8 +20,7 @@ function App() {
 
 	return (
 		<section className="App">
-			<h1>Char Designer!</h1>
-
+			<Character head={head} middle={middle} pants={pants} />
 			<Picker
 				head={head}
 				onHeadChange={setHead}
@@ -33,11 +32,7 @@ function App() {
 				setNewCatchphrase={setNewCatchphrase}
 				handleClick={handleClick}
 			/>
-
 			<Display catchphrases={catchphrases} />
-
-			<Character head={head} middle={middle} pants={pants} />
-			{console.log(catchphrases)}
 		</section>
 	);
 }
