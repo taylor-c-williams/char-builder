@@ -1,20 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+body {
+	background-image: url('https://images.unsplash.com/photo-1517315003714-a071486bd9ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80');
+}
 
 .App {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr;
 	justify-content: center;
 	align-items: center;
-	margin: 150px;
-	font-family: 'Outfit', sans-serif;
+	margin: 0;
+	font-family: 'DM mono', monospace;
 	font-size: 1.5em;
 }
 
+h1 {
+	font-size: 2em;
+	font-family: 'Modak', sans-serif;
+	margin: 20px;
+	font-weight: 100;
+	color: white;
+}
 form {
 	display: grid;
 	grid-template-columns: 1fr, 1fr;
-	justify-items: center;
+	justify-items: start;
+	margin-top: 150px;
 }
 
 label {
@@ -22,15 +35,19 @@ label {
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
+	font-family: 'DM mono', monospace;
+	font-weight: 100;
+	color: white;
 }
 
 select {
 	margin: 10px;
-	height: 50px;
-	width: 150px;
-	font-family: 'Outfit', sans-serif;
+	padding: 10px;
+	font-family: 'DM mono', monospace;
 	font-size: 1.25em;
+	color: darkgrey;
 	border: 1px dashed;
+	border-radius: 5px;
 }
 
 textarea {
@@ -40,9 +57,11 @@ textarea {
 	margin-left: -10px;
 	height: 300px;
 	width: 300px;
-	font-family: 'Outfit', sans-serif;
+	font-family: 'DM mono', monospace;
 	font-size: 1.25em;
+	color: darkgrey;
 	border: 1px dashed;
+	border-radius: 5px;
 }
 
 button {
@@ -50,21 +69,52 @@ button {
 	background-color: white;
 	border: 1px dashed;
 	width: 200px;
-	padding: 15px;
-	font-family: 'Outfit', sans-serif;
+	padding: 10px;
+	font-family: 'DM mono', monospace;
 	font-size: 1em;
+	color: darkgrey;
 	cursor: pointer;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #f8edeb;
+}
+
+button:active {
+	box-shadow: -5px 5px 0px 0px rgba(0, 0, 255, 0.2);
+	background-color: rgba(248, 237, 235);
+	border-radius: 5px;
+	color: grey;
+	padding: 10px;
+	border-bottom: 1px dashed grey;
 }
 
 .catchphrase-display {
 	display: block;
 	margin-top: 20px;
+	margin-left: 150px;
 	font-size: 1.75em;
+	color: white;
 	height: 500px;
 }
 
-button:focus,
+.character-display {
+	margin-left: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
 textarea:focus,
 select:focus {
+	outline: none;
+	box-shadow: -5px 5px 0px 0px rgba(0, 0, 255, 0.2);
+	background-color: rgba(248, 237, 235);
+	color: grey;
+}
+
+button:focus {
 	outline: none;
 }
