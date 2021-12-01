@@ -60,7 +60,6 @@ export default function Picker({
 					type="text"
 					value={newCatchPhrase}
 					onChange={(e) => setNewCatchphrase(e.target.value)}
-					// onKeyUp={(e) => }
 				/>
 				<button onClick={handleClick}>Add Catchphrase!</button>
 			</label>
