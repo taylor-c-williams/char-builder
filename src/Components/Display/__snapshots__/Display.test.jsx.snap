@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Picker component 1`] = `
+<div>
+  <div>
+    Catchphrases:
+    <p>
+      "
+      bingo!
+      "
+    </p>
+    <p>
+      "
+      jabroney!
+      "
+    </p>
+  </div>
+</div>
+`;

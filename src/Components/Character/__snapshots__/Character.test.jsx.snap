@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Character component 1`] = `
+<div>
+  <section
+    class="character-display"
+  >
+    <article
+      aria-label="head"
+      style="background-image: url(./dog-head.png); height: 150px; width: 150px; background-size: cover; background-repeat: no-repeat;"
+    />
+    <article
+      aria-label="middle"
+      style="background-image: url(./fancy-middle.png); height: 150px; width: 150px; background-size: cover; background-repeat: no-repeat;"
+    />
+    <article
+      aria-label="pants"
+      style="background-image: url(./undefined-pants.png); height: 350px; width: 150px; background-size: cover; background-repeat: no-repeat;"
+    />
+  </section>
+</div>
+`;
